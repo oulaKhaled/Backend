@@ -23,18 +23,6 @@ process.on("SIGINT", function(){
     process.exit(0);
 });
 
-/*
-kapat=function(msg,callback){
-    mongoose.connection.close(function(){
-        console.log("Bağlantı Kapatıldı"+msg);
-        callback();
-    });
-    process.on("SIGINT",function(){
-        kapat("Uygulama Kapatıldı",function(){
-            process.exit(0);
-        });
-    });
-};
-*/
+
 
 require("./venue");
